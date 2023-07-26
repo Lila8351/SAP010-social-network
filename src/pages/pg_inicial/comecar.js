@@ -1,0 +1,17 @@
+export function entrarRede() {
+  const sectionInit = document.createElement('section');
+  sectionInit.setAttribute('class', 'cadastro');
+
+  const criarCdastro = `
+      <article>
+        <a class ="botao-cadastre-se" href="/#comecar/cadastrar">Cadastre-se</a>
+        <div>
+          <p>Já tem uma conta?</p>
+          <a class="botao-login-cadastro" href="/#login">Log in</a>
+        </div>
+      </article>
+      `;
+
+  sectionInit.innerHTML = criarCdastro;
+  return sectionInit;
+}
