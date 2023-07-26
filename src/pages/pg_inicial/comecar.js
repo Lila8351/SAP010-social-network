@@ -4,7 +4,7 @@ export function entrarRede() {
 
   const criarCdastro = `
       <article>
-        <a class ="botao-cadastre-se" href="/#comecar/cadastrar">Cadastre-se</a>
+        <a class ="botao-cadastre-se" href="/#criar-cadastro">Cadastre-se</a>
         <div>
           <p>Já tem uma conta?</p>
           <a class="botao-login-cadastro" href="/#login">Log in</a>

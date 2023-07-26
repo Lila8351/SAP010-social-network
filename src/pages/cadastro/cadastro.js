@@ -1,4 +1,4 @@
-export function criarCdastro() {
+export function criarCadastro() {
   const section = document.createElement('section');
   section.setAttribute('class', 'criarCdastro');
 
