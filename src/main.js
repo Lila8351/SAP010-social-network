@@ -6,7 +6,7 @@ import landingPage from './pages/pg_inicial/landingPage.js';
 import { entrarRede } from './pages/pg_inicial/comecar.js';
 import { criarCadastro } from './pages/cadastro/cadastro.js';
 import { login } from './pages/login/login.js';
-
+import { feedHeader } from './pages/feed/feed.js';
 // myFunction();
 
 const addElementos = document.querySelector('#root');
@@ -49,6 +49,7 @@ function addIntro() {
           addElementos.innerHTML = '';
           addElementos.appendChild(login());
           carregouLogin = true;
+
           break;
         case '#criar-cadastro':
           addElementos.innerHTML = '';
@@ -66,31 +67,6 @@ function addIntro() {
 
 window.addEventListener('load', () => {
   addElementos.appendChild(landingPage());
-  setTimeout(addIntro, 2500);
+  setTimeout(addIntro, 2000);
   // routes();
-});
-
-//login com fb
-
-window.fbAsyncInit = function() {
-  FB.init({
-    appId: '{your-app-id}',
-    cookie: true,
-    xfbml: true,
-    version: '{api-version}',
-  });
-  FB.AppEvents.logPageView();
-};
-
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk.js";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-// verificar estado de login
-
-FB.getLoginStatus(function(response) {
-  statusChangeCallback(response);
 });
