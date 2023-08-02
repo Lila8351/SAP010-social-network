@@ -1,4 +1,4 @@
-import { validadeLogin } from "../../lib/index.js";
+import { validadeLogin } from '../../lib/index.js';
 
 export function login() {
   const paginaLogin = document.createElement('section');

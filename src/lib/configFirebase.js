@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
-import { getAuth } from "firebase/auth";
+import { getAuth } from 'firebase/auth';
 
 
 // TODO: Replace the following with your app's Firebase project configuration
